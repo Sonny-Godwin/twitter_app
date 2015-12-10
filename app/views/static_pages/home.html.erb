@@ -2,11 +2,18 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Twitter Example App</h1>
-    <p>
-      This is a sample app that is like Twitter. The app was built in Ruby on Rails 
-      and contains user sign up, log in/log out, micro posting, ability to follow other 
-      users.
-    </p>
+    <div class="jumbotron center">
+      <h1>Welcome to my Twitter Example App</h1>
+      <p>
+        This is a sample app that functions similar to Twitter. The app was built in Ruby on Rails 
+        and contains user sign up, log in/log out, micro posting, ability to follow other 
+        users.
+      </p>
+      
+      <%= link_to "Sign up now!", 'signup_path', class: "btn btn-lg btn-primary" %>
+    </div>
+    
+    <%= link_to image_tag("https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/201410/2014106164538.png", alt: "logo"), '#' %>
+    
   </body>
 </html>
